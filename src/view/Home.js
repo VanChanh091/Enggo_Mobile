@@ -166,6 +166,7 @@ const Home = () => {
                 horizontal={false}
                 renderItem={listSubjects}
                 data={ApiSubjects}
+                scrollEnabled={false}
               />
             </View>
           </View>
@@ -217,6 +218,7 @@ const Home = () => {
                 horizontal={false}
                 renderItem={listSuggest}
                 data={ApiSuggest}
+                scrollEnabled={false}
               />
             </View>
           </View>

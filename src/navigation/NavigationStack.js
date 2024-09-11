@@ -86,17 +86,17 @@ const NavigationStack = () => {
           name="ResetPassword"
           component={ResetPassword}
           options={{ headerShown: false }}
-        />
+        />*/}
         <Stack.Screen
           name="TabNavigationContainer"
           component={TabNavigationContainer}
           options={{ headerShown: false }}
-        /> */}
-        <Stack.Screen
+        />
+        {/* <Stack.Screen
           name="ListVocabulary"
           component={ListVocabulary}
           options={{ headerShown: false }}
-        />
+        /> */}
         {/* <Stack.Screen
           name="Account"
           component={Account}

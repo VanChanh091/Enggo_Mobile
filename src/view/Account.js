@@ -59,55 +59,66 @@ const Account = () => {
 
       <View style={{ flex: 1 }}>
         {/* Info User */}
-        <TouchableOpacity
+        <View
           style={{
-            width: "100%",
-            height: 120,
-
+            flex: 1,
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <View style={styles.boxInfoUser}>
-            <View
-              style={{
-                flex: 2,
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Ionicons name="person-circle-outline" size={45} color="black" />
+          <TouchableOpacity
+            style={{
+              width: "100%",
+              height: 120,
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <View style={styles.boxInfoUser}>
+              <View
+                style={{
+                  flex: 2,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Ionicons
+                  name="person-circle-outline"
+                  size={45}
+                  color="black"
+                />
+              </View>
+              <View
+                style={{
+                  flex: 6.7,
+                  justifyContent: "center",
+                }}
+              >
+                <Text style={styles.name}>Nguyễn Văn Chánh</Text>
+                <Text style={styles.email}>vanchanh0730@gmail.com</Text>
+              </View>
+              <View
+                style={{
+                  flex: 1.3,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Ionicons
+                  name="chevron-forward-outline"
+                  size={25}
+                  color="black"
+                />
+              </View>
             </View>
-            <View
-              style={{
-                flex: 6.7,
-                justifyContent: "center",
-              }}
-            >
-              <Text style={styles.name}>Nguyễn Văn Chánh</Text>
-              <Text style={styles.email}>vanchanh0730@gmail.com</Text>
-            </View>
-            <View
-              style={{
-                flex: 1.3,
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Ionicons
-                name="chevron-forward-outline"
-                size={25}
-                color="black"
-              />
-            </View>
-          </View>
-        </TouchableOpacity>
+          </TouchableOpacity>
+        </View>
 
         {/* Setting */}
         <View
           style={{
             width: "100%",
-            height: 315,
+            height: 310,
           }}
         >
           <View
@@ -378,7 +389,7 @@ const Account = () => {
           style={{
             width: "100%",
             height: 205,
-            marginTop: 15,
+            marginTop: 10,
           }}
         >
           <View
@@ -495,7 +506,7 @@ const Account = () => {
             height: 75,
             justifyContent: "center",
             alignItems: "center",
-            marginTop: 12,
+            marginTop: 10,
           }}
         >
           <TouchableOpacity style={styles.boxLogout}>
@@ -520,7 +531,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   boxLogout: {
-    width: "80%",
+    width: "70%",
     height: 55,
     borderWidth: 1,
     borderColor: "#D0D0D0",
