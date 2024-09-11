@@ -62,7 +62,7 @@ const NavigationStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
+        {/* <Stack.Screen
           name="SignIn"
           component={SignIn}
           options={{ headerShown: false }}
@@ -91,17 +91,17 @@ const NavigationStack = () => {
           name="TabNavigationContainer"
           component={TabNavigationContainer}
           options={{ headerShown: false }}
-        />
+        /> */}
         <Stack.Screen
           name="ListVocabulary"
           component={ListVocabulary}
           options={{ headerShown: false }}
         />
-        <Stack.Screen
+        {/* <Stack.Screen
           name="Account"
           component={Account}
           options={{ headerShown: false }}
-        />
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
