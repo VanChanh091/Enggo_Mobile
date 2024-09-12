@@ -38,7 +38,7 @@ const Account = () => {
   };
 
   return (
-    <PaperProvider style={{ flex: 1, backgroundColor: "#F4F4F4" }}>
+    <PaperProvider style={{ flex: 1 }}>
       <Appbar.Header elevated="true" style={{ backgroundColor: "white" }}>
         <View
           style={{
@@ -57,7 +57,7 @@ const Account = () => {
         </TouchableOpacity>
       </Appbar.Header>
 
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: "white" }}>
         {/* Info User */}
         <View
           style={{
@@ -132,20 +132,25 @@ const Account = () => {
             </Text>
           </View>
 
-          <View style={{ flex: 8.5, backgroundColor: "white" }}>
+          <View
+            style={{
+              flex: 8.5,
+              backgroundColor: "white",
+              borderBottomWidth: 1,
+              borderColor: "#D0D0D0",
+            }}
+          >
             {/* ngon ngu me de */}
             <TouchableOpacity
               style={{
                 width: "100%",
                 height: 55,
-
                 flexDirection: "row",
               }}
             >
               <View
                 style={{
                   flex: 1.5,
-
                   justifyContent: "center",
                   alignItems: "center",
                 }}
@@ -324,6 +329,7 @@ const Account = () => {
                 />
               </View>
             </View>
+
             {/* thoi gian */}
             <View
               style={{

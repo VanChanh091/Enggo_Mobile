@@ -4,14 +4,14 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import { useState, useEffect } from "react";
 
 export default function App() {
-  return <NavigationStack />;
-  // const [isShowSplash, setIsShowSplash] = useState(true);
+  // return <NavigationStack />;
+  const [isShowSplash, setIsShowSplash] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsShowSplash(false);
-  //   }, 3000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsShowSplash(false);
+    }, 3000);
+  }, []);
 
-  // return <>{isShowSplash ? <SplashScreen /> : <NavigationStack />}</>;
+  return <>{isShowSplash ? <SplashScreen /> : <NavigationStack />}</>;
 }

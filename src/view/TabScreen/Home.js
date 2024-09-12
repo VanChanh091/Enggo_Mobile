@@ -13,7 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import ApiSubjects from "../../api/ApiSubjects";
 import ApiSuggest from "../../api/ApiSuggest";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const [search, setSearch] = useState("");
 
   const listSubjects = ({ item }) => (
@@ -27,7 +27,7 @@ const Home = () => {
         alignItems: "center",
       }}
     >
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => handleNavigation(item.id)}>
         <Image
           source={item.image}
           style={{ width: 45, height: 45, resizeMode: "contain" }}
@@ -36,6 +36,41 @@ const Home = () => {
       <Text style={{ fontSize: 15, marginTop: 5 }}>{item.name}</Text>
     </View>
   );
+
+  const handleNavigation = (id) => {
+    switch (id) {
+      case 1:
+        navigation.navigate("Home");
+        break;
+      case 2:
+        navigation.navigate("TinTucNavigation");
+        break;
+      case 3:
+        navigation.navigate("TruyenChemNavigation");
+        break;
+      case 4:
+        // navigation.navigate("TruyenChem_S1");
+        break;
+      case 5:
+        // navigation.navigate("TruyenChem_S1");
+        break;
+      case 6:
+        // navigation.navigate("TruyenChem_S1");
+        break;
+      case 7:
+        // navigation.navigate("TruyenChem_S1");
+        break;
+      case 8:
+        // navigation.navigate("TruyenChem_S1");
+        break;
+      case 9:
+        // navigation.navigate("TruyenChem_S1");
+        break;
+      default:
+        navigation.navigate("Home");
+        break;
+    }
+  };
 
   const listSuggest = ({ item }) => (
     <TouchableOpacity
@@ -93,6 +128,7 @@ const Home = () => {
       </Appbar.Header>
 
       <ScrollView style={{ flex: 1 }}>
+        {/* search bar */}
         <View
           style={{
             width: "100%",
