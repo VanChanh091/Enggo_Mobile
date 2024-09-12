@@ -156,7 +156,7 @@ const Account = () => {
                 }}
               >
                 <Image
-                  source={require("../../img/songNgu.png")}
+                  source={require("../../img/imgTab/songNgu.png")}
                   style={{ width: 45, height: 45, resizeMode: "contain" }}
                 />
               </View>
@@ -204,7 +204,7 @@ const Account = () => {
                 }}
               >
                 <Image
-                  source={require("../../img/languageShow.png")}
+                  source={require("../../img/imgTab/languageShow.png")}
                   style={{ width: 45, height: 45, resizeMode: "contain" }}
                 />
               </View>
@@ -252,7 +252,7 @@ const Account = () => {
                 }}
               >
                 <Image
-                  source={require("../../img/nightMode.png")}
+                  source={require("../../img/imgTab/nightMode.png")}
                   style={{ width: 45, height: 45, resizeMode: "contain" }}
                 />
               </View>
@@ -300,7 +300,7 @@ const Account = () => {
                 }}
               >
                 <Image
-                  source={require("../../img/clock.png")}
+                  source={require("../../img/imgTab/clock.png")}
                   style={{ width: 40, height: 40, resizeMode: "contain" }}
                 />
               </View>

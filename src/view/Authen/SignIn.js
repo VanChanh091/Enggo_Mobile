@@ -52,7 +52,7 @@ const SignIn = ({ navigation }) => {
         }}
       >
         <Image
-          source={require("../../img/logoSplashScreen.png")}
+          source={require("../../img/imgAuth/logoSplashScreen.png")}
           style={{
             marginTop: 18,
             width: 100,
@@ -270,7 +270,7 @@ const SignIn = ({ navigation }) => {
               }}
             >
               <Image
-                source={require("../../img/google.png")}
+                source={require("../../img/imgAuth/google.png")}
                 style={{ width: 32, height: 32, resizeMode: "contain" }}
               />
             </View>
@@ -298,7 +298,7 @@ const SignIn = ({ navigation }) => {
               }}
             >
               <Image
-                source={require("../../img/fb.png")}
+                source={require("../../img/imgAuth/fb.png")}
                 style={{ width: 32, height: 32, resizeMode: "contain" }}
               />
             </View>

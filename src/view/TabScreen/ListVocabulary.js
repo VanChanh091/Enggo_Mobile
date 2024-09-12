@@ -41,7 +41,7 @@ const ListVocabulary = () => {
 
           <View style={{ alignItems: "center" }}>
             <Image
-              source={require("../../img/chart.png")}
+              source={require("../../img/imgTab/chart.png")}
               style={{
                 width: 300,
                 height: 300,
@@ -83,7 +83,7 @@ const ListVocabulary = () => {
             >
               <View style={{ alignItems: "center", justifyContent: "center" }}>
                 <Image
-                  source={require("../../img/folderNull.png")}
+                  source={require("../../img/imgTab/folderNull.png")}
                   style={{
                     width: 60,
                     height: 60,

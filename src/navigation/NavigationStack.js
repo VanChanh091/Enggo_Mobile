@@ -19,6 +19,9 @@ import TruyenChem_S2 from "../view/truyenChem/TruyenChem_S2";
 
 import TinTuc_S1 from "../view/tinTuc/TinTuc_S1";
 import TinTuc_S2 from "../view/tinTuc/TinTuc_S2";
+import DocSach_S1 from "../view/docSach/DocSach_S1";
+import DocSach_S2 from "../view/docSach/DocSach_S2";
+import DocSach_S3 from "../view/docSach/DocSach_S3";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -136,10 +139,38 @@ const TinTucNavigation = () => {
   );
 };
 
+const DocSachNavigation = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="DocSach_S1"
+        component={DocSach_S1}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="DocSach_S2"
+        component={DocSach_S2}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="DocSach_S3"
+        component={DocSach_S3}
+        options={{ headerShown: false }}
+      />
+    </Stack.Navigator>
+  );
+};
+
 const NavigationStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        {/* <Stack.Screen
+          name="DocSachNavigation"
+          component={DocSachNavigation}
+          options={{ headerShown: false }}
+        /> */}
+
         <Stack.Screen
           name="AuthenNavigation"
           component={AuthenNavigation}

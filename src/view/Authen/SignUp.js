@@ -278,7 +278,7 @@ const SignUp = ({ navigation }) => {
               }}
             >
               <Image
-                source={require("../../img/google.png")}
+                source={require("../../img/imgAuth/google.png")}
                 style={{ width: 32, height: 32, resizeMode: "contain" }}
               />
             </View>
@@ -306,7 +306,7 @@ const SignUp = ({ navigation }) => {
               }}
             >
               <Image
-                source={require("../../img/fb.png")}
+                source={require("../../img/imgAuth/fb.png")}
                 style={{ width: 32, height: 32, resizeMode: "contain" }}
               />
             </View>
