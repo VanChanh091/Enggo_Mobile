@@ -61,6 +61,7 @@ const DocSach_S1 = () => {
         <Appbar.BackAction color="white" onPress={() => navigation.goBack()} />
         <Appbar.Content title="Đọc Sách" color="white" />
       </Appbar.Header>
+
       <View style={{ flex: 1 }}>
         <View style={{ flex: 1, borderBottomWidth: 1 }}>
           {/* Search bar */}
@@ -106,22 +107,11 @@ const DocSach_S1 = () => {
                   }}
                 >
                   <Text
-                    style={{ fontWeight: "bold", marginLeft: 13, fontSize: 20 }}
+                    style={{ fontWeight: "bold", marginLeft: 16, fontSize: 22 }}
                   >
                     Popular
                   </Text>
                 </View>
-                <TouchableOpacity
-                  style={{
-                    flex: 2.7,
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                  //   onPress={() => navigation.navigate("")}
-                >
-                  <Text style={{ fontSize: 16, color: "gray" }}>Tất cả</Text>
-                </TouchableOpacity>
               </View>
 
               <View style={{ flex: 8.8 }}>
