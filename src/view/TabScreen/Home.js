@@ -49,7 +49,7 @@ const Home = ({ navigation }) => {
         navigation.navigate("TruyenChemNavigation");
         break;
       case 4:
-        // navigation.navigate("TruyenChem_S1");
+        navigation.navigate("SongNguNavigation");
         break;
       case 5:
         // navigation.navigate("TruyenChem_S1");

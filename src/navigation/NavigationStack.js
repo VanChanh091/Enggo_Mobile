@@ -196,16 +196,10 @@ const NavigationStack = () => {
           options={{ headerShown: false }}
         />
         {/* <Stack.Screen
-          name="DocSachNavigation"
-          component={DocSachNavigation}
-          options={{ headerShown: false }}
-        /> */}
-
-        <Stack.Screen
           name="AuthenNavigation"
           component={AuthenNavigation}
           options={{ headerShown: false }}
-        />
+        /> */}
 
         <Stack.Screen
           name="TabNavigationContainer"
